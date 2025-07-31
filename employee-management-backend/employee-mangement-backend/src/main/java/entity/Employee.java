@@ -1,15 +1,28 @@
 package entity;
 
 
-import jakarta.persistence.Entity;
+import jakarta.persistence.*;
 import org.springframework.boot.autoconfigure.domain.EntityScan;
 
+
 @Entity
+@Table(name = "Employees")
 public class Employee {
+
+   @Id
+   @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
+
+    @Column(name = "name")
     private String name;
+
+    @Column(name = "email", nullable = false , unique = true)
     private String email;
+
+    @Column(name = "department")
     private String department;
+
+    @Column(name = "age")
     private int age;
 
     public Employee() {
