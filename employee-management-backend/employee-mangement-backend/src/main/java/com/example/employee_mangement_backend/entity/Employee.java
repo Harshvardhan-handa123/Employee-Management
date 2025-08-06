@@ -1,4 +1,4 @@
-package entity;
+package com.example.employee_mangement_backend.entity;
 
 
 import jakarta.persistence.*;

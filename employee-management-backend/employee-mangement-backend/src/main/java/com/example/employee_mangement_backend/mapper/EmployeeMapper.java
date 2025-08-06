@@ -1,8 +1,10 @@
-package mapper;
+package com.example.employee_mangement_backend.mapper;
 
-import dto.EmployeeDto;
-import entity.Employee;
+import com.example.employee_mangement_backend.dto.EmployeeDto;
+import com.example.employee_mangement_backend.entity.Employee;
+import org.springframework.stereotype.Component;
 
+@Component
 public class EmployeeMapper {
     public Employee mapToEmployee(EmployeeDto employeedto){
         Employee employee = new Employee();

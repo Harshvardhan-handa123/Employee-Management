@@ -1,4 +1,4 @@
-package dto;
+package com.example.employee_mangement_backend.dto;
 
 public class EmployeeDto {
     private int id;
@@ -7,7 +7,11 @@ public class EmployeeDto {
     private String department;
     private int age;
 
-    public EmployeeDto(String email, int id, String name, String department, int age) {
+    public EmployeeDto() {
+    }
+
+
+    public EmployeeDto(int id, String name, String email, String department, int age) {
         this.email = email;
         this.id = id;
         this.name = name;
@@ -15,8 +19,6 @@ public class EmployeeDto {
         this.age = age;
     }
 
-    public EmployeeDto() {
-    }
 
     public int getId() {
         return id;
